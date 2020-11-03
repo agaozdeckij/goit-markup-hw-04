@@ -118,8 +118,39 @@ header {
   margin-left: auto;
 }
 .site-contacts .item + .item {
-  margin-left: 12px;
+  margin-left: 30px;
 }
+/* .link.envelope {
+  display: inline-flex;
+  align-items: center;
+}
+.link:hover .envelope {
+  color: var(--accent-text-color);
+}
+.link.envelope::before {
+  content: "";
+  display: block;
+  margin-right: 10px;
+  width: 16px;
+  height: 12px;
+  background-image: url(../images/envelope.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.link.smartphone {
+  display: inline-flex;
+  align-items: center;
+}
+.link.smartphone::before {
+  content: "";
+  display: block;
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/smartphone.png);
+  background-position: inherit;
+  background-repeat: no-repeat;
+} */
 .site-contacts .link {
   color: var(--primary-text-color);
 
@@ -143,6 +174,22 @@ header {
   margin-top: 0;
   margin-bottom: 94px;
 }
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/fon-copy.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .hero-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -176,6 +223,27 @@ header {
 }
 .advantages:first-child {
   margin-left: 0;
+}
+.advantages::before {
+  margin-bottom: 30px;
+  display: block;
+  content: "";
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+.icon-antenna::before {
+  background-image: url(../images/antenna.png);
+}
+.icon-clock::before {
+  background-image: url(../images/clock.png);
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram.png);
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.png);
 }
 .features {
   display: flex;
