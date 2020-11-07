@@ -120,37 +120,30 @@ header {
 .site-contacts .item + .item {
   margin-left: 30px;
 }
-/* .link.envelope {
+.envelope-item {
+  display: flex;
+  align-items: center;
+}
+.envelope-icon {
+  margin-right: 10px;
+  fill: var(--primary-text-color);
+}
+.envelope-item:hover .envelope-icon {
+  fill: var(--accent-text-color);
+}
+
+.smartphone-item {
   display: inline-flex;
   align-items: center;
 }
-.link:hover .envelope {
-  color: var(--accent-text-color);
-}
-.link.envelope::before {
-  content: "";
-  display: block;
+.smartphone-icon {
   margin-right: 10px;
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/envelope.png);
-  background-position: center;
-  background-repeat: no-repeat;
+  fill: var(--primary-text-color);
 }
-.link.smartphone {
-  display: inline-flex;
-  align-items: center;
+.smartphone-item:hover .smartphone-icon {
+  fill: var(--accent-text-color);
 }
-.link.smartphone::before {
-  content: "";
-  display: block;
-  margin-right: 10px;
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/smartphone.png);
-  background-position: inherit;
-  background-repeat: no-repeat;
-} */
+
 .site-contacts .link {
   color: var(--primary-text-color);
 
@@ -162,7 +155,7 @@ header {
   text-decoration: none;
 }
 .site-contacts .link:hover,
-.site-contacts .link:focus {
+.site-contacts.link:focus {
   color: var(--accent-text-color);
 }
 
@@ -312,7 +305,7 @@ header {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 0;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 
   font-weight: normal;
   font-size: 16px;
@@ -338,6 +331,37 @@ header {
   padding-left: 59px;
   background-color: var(--primary-white-color);
   text-align: center;
+}
+/* Our team icons */
+.icon-list {
+  display: inline-flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background-color: var(--primary-white-color);
+}
+
+.icon-list {
+  padding-bottom: 30px;
+}
+.icon-list-item {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.icon-list-item:first-child {
+  margin-left: 32px;
+}
+.icon-list-item:last-child {
+  margin-right: 32px;
+}
+.icon-link {
+  fill: var(--primary-white-color);
+}
+
+.icon-list-item:hover .icon-link,
+.icon-list-item:focus .icon-link {
+  fill: var(--accent-text-color);
 }
 
 /* Кнопка на index.html */
