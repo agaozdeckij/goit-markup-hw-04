@@ -18,6 +18,7 @@ html {
   --bgc-hero-footer: #2f303a;
   --bgc-team: #f5f4fa;
   --pc-icon-color: #afb1b8;
+  --clients-link-color: #afb1b8;
 }
 /* Утилиты */
 .list {
@@ -413,6 +414,7 @@ header {
   border-radius: 4px;
   align-items: center;
   justify-content: center;
+  fill: var(--clients-link-color);
 }
 .clients-list-item {
   margin-right: 30px;
@@ -421,13 +423,13 @@ header {
   margin-right: 0;
   margin-bottom: 94px;
 }
-.clients-link {
-  fill: #afb1b8;
-}
-.clients-link:hover {
+
+.clients-link:hover,
+.clients-link:focus {
   border-color: var(--accent-text-color);
 }
-.clients-link:hover .clients-icon {
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
   fill: var(--accent-text-color);
 }
 
