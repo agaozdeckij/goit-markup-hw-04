@@ -17,6 +17,7 @@ html {
   --bgc-button-secondary: #f5f4fa;
   --bgc-hero-footer: #2f303a;
   --bgc-team: #f5f4fa;
+  --pc-icon-color: #afb1b8;
 }
 /* Утилиты */
 .list {
@@ -120,7 +121,8 @@ header {
 .site-contacts .item + .item {
   margin-left: 30px;
 }
-.envelope-item {
+
+.envelope-link {
   display: flex;
   align-items: center;
 }
@@ -128,19 +130,21 @@ header {
   margin-right: 10px;
   fill: var(--primary-text-color);
 }
-.envelope-item:hover .envelope-icon {
+.envelope-link:hover .envelope-icon,
+.envelope-link:focus .envelope-icon {
   fill: var(--accent-text-color);
 }
 
-.smartphone-item {
-  display: inline-flex;
+.smartphone-link {
+  display: flex;
   align-items: center;
 }
 .smartphone-icon {
   margin-right: 10px;
   fill: var(--primary-text-color);
 }
-.smartphone-item:hover .smartphone-icon {
+.smartphone-link:hover .smartphone-icon,
+.smartphone-link:focus .smartphone-icon {
   fill: var(--accent-text-color);
 }
 
@@ -154,8 +158,12 @@ header {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.site-contacts .link:hover,
-.site-contacts.link:focus {
+.envelope-link:hover,
+.envelope-link:focus {
+  color: var(--accent-text-color);
+}
+.smartphone-link:hover,
+.smartphone-link:focus {
   color: var(--accent-text-color);
 }
 
@@ -348,7 +356,11 @@ header {
   margin-right: 10px;
   border-radius: 50%;
 }
-
+.icon-link-item {
+  display: block;
+  border-radius: 50%;
+  background-color: var(--primary-white-color);
+}
 .icon-list-item:first-child {
   margin-left: 32px;
 }
@@ -356,14 +368,16 @@ header {
   margin-right: 32px;
 }
 .icon-link {
+  fill: var(--pc-icon-color);
+}
+.icon-link-item:hover,
+.icon-link-item:focus {
+  background-color: var(--accent-text-color);
+}
+.icon-link-item:hover .icon-link,
+.icon-link-item:focus .icon-link {
   fill: var(--primary-white-color);
 }
-
-.icon-list-item:hover .icon-link,
-.icon-list-item:focus .icon-link {
-  fill: var(--accent-text-color);
-}
-
 /* Кнопка на index.html */
 .button.primary {
   color: var(--primary-white-color);
@@ -382,6 +396,14 @@ header {
   min-width: 200px;
   text-align: center;
 }
+/* Our clients */
+.clients {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
 /* Футер */
 .footer {
   background-color: var(--bgc-hero-footer);
