@@ -397,18 +397,52 @@ header {
   text-align: center;
 }
 /* Our clients */
-.clients {
+.clients-list {
   display: flex;
+}
+
+.clients-list-item {
+  display: flex;
+}
+.clients-link {
+  display: block;
+  display: flex;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  align-items: center;
   justify-content: center;
-  padding: 0;
-  margin: 0;
+}
+.clients-list-item {
+  margin-right: 30px;
+}
+.clients-list-item:last-child {
+  margin-right: 0;
+  margin-bottom: 94px;
+}
+.clients-link {
+  fill: #afb1b8;
+}
+.clients-link:hover {
+  border-color: var(--accent-text-color);
+}
+.clients-link:hover .clients-icon {
+  fill: var(--accent-text-color);
 }
 
 /* Футер */
+.footer-info {
+  display: flex;
+  align-items: baseline;
+}
 .footer {
   background-color: var(--bgc-hero-footer);
 }
 /* Footer address */
+.join {
+  padding-left: 70px;
+}
 .address {
   padding-bottom: 9px;
 
@@ -422,8 +456,65 @@ header {
 .mail {
   padding-bottom: 9px;
 }
+.mail:hover,
+.mail:focus {
+  color: var(--accent-text-color);
+}
 .phone-number {
   padding-bottom: 60px;
+}
+.phone-number:hover,
+.phone-number:focus {
+  color: var(--accent-text-color);
+}
+/* Join-icons */
+.join-title {
+  margin: 0;
+  padding: 0;
+  color: var(--primary-white-color);
+  width: 145px;
+  height: 16px;
+}
+.join-title {
+  margin-bottom: 20px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.join-list {
+  display: inline-flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background-color: var(--bgc-hero-footer);
+}
+
+.join-list-item {
+  margin-right: 10px;
+}
+.join-link {
+  display: block;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.join-list-item {
+  margin-right: 10px;
+}
+
+.join-list-item:last-child {
+  margin-right: 0;
+}
+.join-link {
+  fill: var(--primary-white-color);
+}
+.join-link:hover,
+.join-link:focus {
+  background-color: var(--accent-text-color);
 }
 
 /* Страница portfolio.html */
@@ -440,10 +531,11 @@ header {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
-.button.secondary:hover,
-.button.secondary:focus {
+.button-secondary:hover,
+.button-secondary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-text-color);
 }
@@ -477,6 +569,10 @@ header {
 }
 .work-examples :nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+.card-info:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-info {
   border: 1px solid #eeeeee;
