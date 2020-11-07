@@ -463,7 +463,7 @@ header {
   color: var(--accent-text-color);
 }
 .phone-number {
-  padding-bottom: 60px;
+  margin-bottom: 60px;
 }
 .phone-number:hover,
 .phone-number:focus {
